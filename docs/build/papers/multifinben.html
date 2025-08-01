@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation &mdash; Shengyuan Lin - Personal Blog 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=bac277d5" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="../_static/js/language-switcher.js?v=2b9764c2"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ACM Conference Paper" href="gamestop_analysis.html" />
+    <link rel="prev" title="Open FinLLM Leaderboard: Towards Financial AI Readiness" href="open_finllm_leaderboard.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Shengyuan Lin - Personal Blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">Introduction Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">About Me</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/overview.html">Projects Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/open_finllm_leaderboard.html">Open FinLLM Leaderboard Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/gme_event_analysis.html">Analyzing Cascading GME Event Using LLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/handwritten_digits.html">Handwritten Digits Recognition Project</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Work Experience</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../experience/overview.html">Work Experience Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../experience/china_telecom.html">China Telecom Company - Data Analyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../experience/fuzhou_digital.html">Fuzhou Digital Industry Internet Technology - Software Engineer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Published Papers</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Published Papers Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open_finllm_leaderboard.html">Open FinLLM Leaderboard: Towards Financial AI Readiness</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#paper-information">Paper Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#research-background">Research Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#technical-contributions">Technical Contributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-construction">Dataset Construction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#experimental-design">Experimental Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-findings">Key Findings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#research-impact">Research Impact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#future-work">Future Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#related-links">Related Links</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gamestop_analysis.html">ACM Conference Paper</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Practical Resources &amp; Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../resources/overview.html">Practical Resources &amp; Tutorials</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Shengyuan Lin - Personal Blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/leyradc/MyBlog/blob/main/docs/source/papers/multifinben.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="multifinben-a-multilingual-multimodal-and-difficulty-aware-benchmark-for-financial-llm-evaluation">
+<h1>MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation<a class="headerlink" href="#multifinben-a-multilingual-multimodal-and-difficulty-aware-benchmark-for-financial-llm-evaluation" title="Link to this heading"></a></h1>
+<section id="paper-information">
+<h2>Paper Information<a class="headerlink" href="#paper-information" title="Link to this heading"></a></h2>
+<p><strong>Title</strong>: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation
+<strong>Authors</strong>: Xueqing Peng, Lingfei Qian, Yan Wang, Ruoyu Xiang, Yueru He, Yang Ren, Mingyang Jiang, Jeff Zhao, Huan He, Yi Han, Yun Feng, Yuechen Jiang, Yupeng Cao, Haohang Li, Yangyang Yu, Xiaoyu Wang, Penglei Gao, Shengyuan Lin, Keyi Wang, Shanshan Yang, Yilun Zhao, Zhiwei Liu, Peng Lu, Jerry Huang, Suyuchen Wang, Triantafillos Papadopoulos, Polydoros Giannouris, Efstathia Soufleri, Nuo Chen, Guojun Xiong, Zhiyang Deng, Yijia Zhao, Mingquan Lin, Meikang Qiu, Kaleb E Smith, Arman Cohan, Xiao-Yang Liu, Jimin Huang, Alejandro Lopez-Lira, Xi Chen, Junichi Tsujii, Jian-Yun Nie, Sophia Ananiadou, Qianqian Xie
+<strong>Publication Date</strong>: June 16, 2025
+<strong>Journal/Conference</strong>: arXiv
+<strong>DOI</strong>: <cite>10.48550/arXiv.2506.14028</cite>
+<strong>Paper Link</strong>: <cite>https://arxiv.org/abs/2506.14028</cite></p>
+</section>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading"></a></h2>
+<p>Recent advances in large language models (LLMs) have accelerated progress in financial NLP and applications, yet existing benchmarks remain limited to monolingual and unimodal settings, often over-relying on simple tasks and failing to reflect the complexity of real-world financial communication.</p>
+<p>We introduce MultiFinBen, the first multilingual and multimodal benchmark tailored to the global financial domain, evaluating LLMs across modalities (text, vision, audio) and linguistic settings (monolingual, bilingual, multilingual) on domain-specific tasks.</p>
+<p>We introduce two novel tasks, including PolyFiQA-Easy and PolyFiQA-Expert, the first multilingual financial benchmarks requiring models to perform complex reasoning over mixed-language inputs; and EnglishOCR and SpanishOCR, the first OCR-embedded financial QA tasks challenging models to extract and reason over information from visual-text financial documents.</p>
+<p>Moreover, we propose a dynamic, difficulty-aware selection mechanism and curate a compact, balanced benchmark rather than simple aggregation existing datasets. Extensive evaluation of 22 state-of-the-art models reveals that even the strongest models, despite their general multimodal and multilingual capabilities, struggle dramatically when faced with complex cross-lingual and multimodal tasks in financial domain.</p>
+<p>MultiFinBen is publicly released to foster transparent, reproducible, and inclusive progress in financial studies and applications.</p>
+</section>
+<section id="research-background">
+<h2>Research Background<a class="headerlink" href="#research-background" title="Link to this heading"></a></h2>
+<p>With the deepening development of financial globalization, financial AI systems face unprecedented challenges:</p>
+<ol class="arabic simple">
+<li><p><strong>Multilingual Complexity</strong>: Global financial markets involve multiple languages, while existing benchmarks mainly focus on English</p></li>
+<li><p><strong>Multimodal Data</strong>: Financial information exists in various forms such as text, images, and audio</p></li>
+<li><p><strong>Task Complexity</strong>: Real financial tasks often require complex reasoning across modalities and languages</p></li>
+<li><p><strong>Incomplete Evaluation</strong>: Existing evaluation methods cannot comprehensively reflect the actual application capabilities of models</p></li>
+</ol>
+<p>To address these issues, we proposed the MultiFinBen benchmark.</p>
+</section>
+<section id="technical-contributions">
+<h2>Technical Contributions<a class="headerlink" href="#technical-contributions" title="Link to this heading"></a></h2>
+<p>### 1. Multilingual Support
+- <strong>PolyFiQA-Easy</strong>: Basic multilingual financial question-answering tasks
+- <strong>PolyFiQA-Expert</strong>: Advanced multilingual financial reasoning tasks
+- Supports multiple languages including English, Chinese, Spanish, etc.
+- Achieved cross-language financial information understanding</p>
+<p>### 2. Multimodal Integration
+- <strong>EnglishOCR</strong>: English financial document OCR tasks
+- <strong>SpanishOCR</strong>: Spanish financial document OCR tasks
+- Supports multiple modalities including text, images, and audio
+- Achieved cross-modal financial information extraction</p>
+<p>### 3. Difficulty-Aware Mechanism
+- Dynamic difficulty assessment algorithms
+- Adaptive task selection strategies
+- Balanced dataset construction methods
+- Personalized evaluation paths</p>
+<p>### 4. Standardized Evaluation
+- Unified evaluation metrics
+- Reproducible experimental settings
+- Transparent evaluation processes
+- Comprehensive performance analysis</p>
+</section>
+<section id="dataset-construction">
+<h2>Dataset Construction<a class="headerlink" href="#dataset-construction" title="Link to this heading"></a></h2>
+<p>### Data Sources
+1. <strong>Financial News</strong>: Multilingual news from major global financial media
+2. <strong>Financial Reports</strong>: Financial statements and annual reports of listed companies
+3. <strong>Regulatory Documents</strong>: Policy documents from financial regulatory agencies
+4. <strong>Market Data</strong>: Market information such as stock prices and trading volumes
+5. <strong>Social Media</strong>: Financial-related social media discussions</p>
+<p>### Data Preprocessing
+- <strong>Multilingual Alignment</strong>: Ensures consistency of content across different language versions
+- <strong>Quality Filtering</strong>: Removes low-quality and duplicate content
+- <strong>Annotation Standardization</strong>: Establishes unified annotation standards
+- <strong>Privacy Protection</strong>: Ensures anonymization of sensitive information</p>
+<p>### Task Design
+1. <strong>Text Understanding Tasks</strong>: Reading comprehension of financial documents
+2. <strong>Image Recognition Tasks</strong>: Recognition and analysis of financial charts
+3. <strong>Audio Processing Tasks</strong>: Speech recognition of financial news
+4. <strong>Cross-modal Tasks</strong>: Comprehensive understanding of multimodal financial information</p>
+</section>
+<section id="experimental-design">
+<h2>Experimental Design<a class="headerlink" href="#experimental-design" title="Link to this heading"></a></h2>
+<p>### Evaluated Models
+We evaluated 22 state-of-the-art models, including:
+- <strong>GPT Series</strong>: GPT-3.5, GPT-4, etc.
+- <strong>Claude Series</strong>: Claude-2, Claude-3, etc.
+- <strong>Open Source Models</strong>: LLaMA, Mistral, etc.
+- <strong>Specialized Models</strong>: Financial domain-specific models</p>
+<p>### Evaluation Metrics
+1. <strong>Accuracy</strong>: The correctness rate of model responses
+2. <strong>Consistency</strong>: Consistency across languages and modalities
+3. <strong>Robustness</strong>: Performance stability under different conditions
+4. <strong>Efficiency</strong>: Response time and resource consumption</p>
+<p>### Experimental Results
+- <strong>Overall Performance</strong>: Most models show significant performance degradation on multilingual and multimodal tasks
+- <strong>Language Gap</strong>: Performance differences between different languages are significant
+- <strong>Modality Gap</strong>: Performance differences between different modalities are also significant
+- <strong>Difficulty Correlation</strong>: Performance is positively correlated with task difficulty</p>
+</section>
+<section id="key-findings">
+<h2>Key Findings<a class="headerlink" href="#key-findings" title="Link to this heading"></a></h2>
+<p>### 1. Multilingual Challenges
+- Models perform significantly better in English than in other languages
+- Cross-language reasoning capabilities are limited
+- Language-specific financial knowledge is insufficient</p>
+<p>### 2. Multimodal Limitations
+- Visual-text understanding capabilities need improvement
+- Audio processing capabilities are relatively weak
+- Cross-modal reasoning is challenging</p>
+<p>### 3. Domain-Specific Issues
+- Financial domain knowledge is insufficient
+- Professional terminology understanding is limited
+- Real-world application capabilities need enhancement</p>
+<p>### 4. Evaluation Insights
+- Current evaluation methods cannot fully reflect real application scenarios
+- Difficulty-aware evaluation is more meaningful
+- Comprehensive evaluation across multiple dimensions is necessary</p>
+</section>
+<section id="research-impact">
+<h2>Research Impact<a class="headerlink" href="#research-impact" title="Link to this heading"></a></h2>
+<p>### Academic Impact
+- <strong>Benchmark Standard</strong>: Established a new standard for financial AI evaluation
+- <strong>Research Direction</strong>: Provided new research directions for financial AI
+- <strong>Methodology Innovation</strong>: Proposed innovative evaluation methodologies</p>
+<p>### Industry Impact
+- <strong>Application Guidance</strong>: Provided guidance for financial AI applications
+- <strong>Technology Development</strong>: Promoted the development of financial AI technology
+- <strong>Standard Establishment</strong>: Helped establish industry standards</p>
+<p>### Community Impact
+- <strong>Open Source Contribution</strong>: Contributed to the open source community
+- <strong>Knowledge Sharing</strong>: Promoted knowledge sharing in the financial AI field
+- <strong>Collaboration Promotion</strong>: Promoted international collaboration</p>
+</section>
+<section id="future-work">
+<h2>Future Work<a class="headerlink" href="#future-work" title="Link to this heading"></a></h2>
+<p>### Short-term Goals
+1. <strong>Dataset Expansion</strong>: Expand the dataset to include more languages and modalities
+2. <strong>Task Enhancement</strong>: Enhance existing tasks and add new task types
+3. <strong>Evaluation Improvement</strong>: Improve evaluation methods and metrics</p>
+<p>### Long-term Vision
+1. <strong>Benchmark Evolution</strong>: Develop the benchmark into a comprehensive evaluation platform
+2. <strong>Industry Integration</strong>: Integrate with industry applications
+3. <strong>International Collaboration</strong>: Promote international collaboration and standardization</p>
+</section>
+<section id="related-links">
+<h2>Related Links<a class="headerlink" href="#related-links" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Paper</strong>: <a class="reference external" href="https://arxiv.org/abs/2506.14028">https://arxiv.org/abs/2506.14028</a></p></li>
+<li><p><strong>Code Repository</strong>: TBD</p></li>
+<li><p><strong>Dataset</strong>: TBD</p></li>
+<li><p><strong>Documentation</strong>: TBD</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="open_finllm_leaderboard.html" class="btn btn-neutral float-left" title="Open FinLLM Leaderboard: Towards Financial AI Readiness" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gamestop_analysis.html" class="btn btn-neutral float-right" title="ACM Conference Paper" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Shengyuan Lin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

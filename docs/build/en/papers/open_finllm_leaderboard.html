@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open FinLLM Leaderboard: Towards Financial AI Readiness &mdash; Shengyuan Lin - Personal Blog 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=bac277d5" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=f115507d"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=beaddf03"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="../../_static/js/language-switcher.js?v=2b9764c2"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Shengyuan Lin - Personal Blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">个人介绍</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">个人介绍概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/introduction.html">个人介绍</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">项目展示</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/overview.html">项目展示概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/open_finllm_leaderboard.html">Open FinLLM Leaderboard 项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/gme_event_analysis.html">基于大语言模型的GME连锁事件分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/handwritten_digits.html">手写数字识别项目</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">工作经验</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../experience/overview.html">工作经验概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../experience/china_telecom.html">中国电信公司 - 数据分析师</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../experience/fuzhou_digital.html">福州数字产业互联网技术 - 软件工程师</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">发表论文</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/overview.html">发表论文概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/open_finllm_leaderboard.html">Open FinLLM Leaderboard: Towards Financial AI Readiness</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/multifinben.html">MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/gamestop_analysis.html">ACM Conference Paper</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">实用资源与教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/overview.html">实用资源与教程</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Shengyuan Lin - Personal Blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Open FinLLM Leaderboard: Towards Financial AI Readiness</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/leyradc/MyBlog/blob/main/docs/source/en/papers/open_finllm_leaderboard.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="open-finllm-leaderboard-towards-financial-ai-readiness">
+<h1>Open FinLLM Leaderboard: Towards Financial AI Readiness<a class="headerlink" href="#open-finllm-leaderboard-towards-financial-ai-readiness" title="Link to this heading"></a></h1>
+<section id="paper-information">
+<h2>Paper Information<a class="headerlink" href="#paper-information" title="Link to this heading"></a></h2>
+<p><strong>Title</strong>: Open FinLLM Leaderboard: Towards Financial AI Readiness
+<strong>Authors</strong>: Shengyuan Colin Lin, Felix Tian, Keyi Wang, Xingjian Zhao, Jimin Huang, Qianqian Xie, Luca Borella, Matt White, Christina Dan Wang, Kairong Xiao, Xiao-Yang Liu Yanglet, Li Deng
+<strong>Publication Date</strong>: January 19, 2025
+<strong>Journal/Conference</strong>: arXiv
+<strong>DOI</strong>: <cite>10.48550/arXiv.2501.10963</cite>
+<strong>Paper Link</strong>: <cite>https://arxiv.org/abs/2501.10963</cite></p>
+</section>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading"></a></h2>
+<p>Financial large language models (FinLLMs) with multimodal capabilities are envisioned to revolutionize applications across business, finance, accounting, and auditing. However, real-world adoption requires robust benchmarks of FinLLMs' and FinAgents' performance. Maintaining an open leaderboard is crucial for encouraging innovative adoption and improving model effectiveness.</p>
+<p>In collaboration with Linux Foundation and Hugging Face, we create an open FinLLM leaderboard, which serves as an open platform for assessing and comparing AI models' performance on a wide spectrum of financial tasks. By democratizing access to advances of financial knowledge and intelligence, a chatbot or agent may enhance the analytical capabilities of the general public to a professional level within a few months of usage.</p>
+<p>This open leaderboard welcomes contributions from academia, open-source community, industry, and stakeholders. In particular, we encourage contributions of new datasets, tasks, and models for continual update. Through fostering a collaborative and open ecosystem, we seek to promote financial AI readiness.</p>
+</section>
+<section id="research-background">
+<h2>Research Background<a class="headerlink" href="#research-background" title="Link to this heading"></a></h2>
+<p>With the rapid development of large language model technology, the financial AI field faces the following challenges:</p>
+<ol class="arabic simple">
+<li><p><strong>Lack of Standardized Evaluation</strong>: Existing financial AI model evaluations lack unified standards and benchmarks</p></li>
+<li><p><strong>Limited Evaluation Scope</strong>: Most evaluations focus only on single tasks or single modalities</p></li>
+<li><p><strong>Closed Nature</strong>: Many evaluation platforms lack openness and transparency</p></li>
+<li><p><strong>Insufficient Practicality</strong>: Evaluation results have gaps with actual application scenarios</p></li>
+</ol>
+<p>To address these issues, we proposed the Open FinLLM Leaderboard project.</p>
+</section>
+<section id="technical-contributions">
+<h2>Technical Contributions<a class="headerlink" href="#technical-contributions" title="Link to this heading"></a></h2>
+<p>### 1. Open Evaluation Platform
+- Established the first open financial AI model evaluation platform
+- Supports unified evaluation of multiple financial tasks
+- Provides transparent evaluation standards and processes</p>
+<p>### 2. Multimodal Support
+- Supports multiple modalities including text, images, and audio
+- Achieved cross-modal financial information understanding
+- Established evaluation standards for multimodal financial data</p>
+<p>### 3. Standardized Framework
+- Defined standard processes for financial AI model evaluation
+- Established reproducible evaluation methods
+- Provided detailed evaluation metrics and benchmarks</p>
+<p>### 4. Community-Driven
+- Encourages active participation from academia and industry
+- Supports contributions of new datasets and tasks
+- Established an open collaborative ecosystem</p>
+</section>
+<section id="experimental-design">
+<h2>Experimental Design<a class="headerlink" href="#experimental-design" title="Link to this heading"></a></h2>
+<p>### Evaluation Tasks
+1. <strong>Financial Document Understanding</strong>: Analysis of financial reports, news articles, etc.
+2. <strong>Investment Decision Support</strong>: Investment advice based on market data
+3. <strong>Risk Assessment</strong>: Identification and quantification of financial risks
+4. <strong>Market Prediction</strong>: Stock price and market trend prediction
+5. <strong>Regulatory Compliance</strong>: Interpretation and compliance checking of financial regulations</p>
+<p>### Evaluation Metrics
+- <strong>Accuracy</strong>: The accuracy of model predictions
+- <strong>Consistency</strong>: The stability and consistency of model outputs
+- <strong>Interpretability</strong>: The understandability of model decisions
+- <strong>Efficiency</strong>: The computational efficiency and response time of models</p>
+</section>
+<section id="experimental-results">
+<h2>Experimental Results<a class="headerlink" href="#experimental-results" title="Link to this heading"></a></h2>
+<p>Through extensive experimental evaluation, we validated the effectiveness of the Open FinLLM Leaderboard:</p>
+<ol class="arabic simple">
+<li><p><strong>Model Performance Comparison</strong>: Successfully compared the performance of various financial AI models</p></li>
+<li><p><strong>Task Adaptability</strong>: Verified the adaptability of models to different financial tasks</p></li>
+<li><p><strong>Multimodal Capabilities</strong>: Evaluated the ability of models to process multimodal financial data</p></li>
+<li><p><strong>Practicality Validation</strong>: Validated the effectiveness of models in actual application scenarios</p></li>
+</ol>
+</section>
+<section id="impact-and-significance">
+<h2>Impact and Significance<a class="headerlink" href="#impact-and-significance" title="Link to this heading"></a></h2>
+<p>### Academic Impact
+- Provided a standardized evaluation framework for financial AI research
+- Promoted academic exchange and collaboration in the financial AI field
+- Advanced the theoretical development of financial AI technology</p>
+<p>### Industrial Impact
+- Provided reliable AI model selection standards for the financial industry
+- Accelerated the practical application of financial AI technology
+- Improved the credibility and transparency of financial AI systems</p>
+<p>### Social Impact
+- Promoted the democratization of financial AI technology
+- Enhanced public understanding and trust in financial AI
+- Promoted the inclusiveness and accessibility of financial services</p>
+</section>
+<section id="future-work">
+<h2>Future Work<a class="headerlink" href="#future-work" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Expand Evaluation Scope</strong>: Add more financial tasks and scenarios</p></li>
+<li><p><strong>Improve Evaluation Precision</strong>: Optimize evaluation metrics and methods</p></li>
+<li><p><strong>Enhance Platform Functionality</strong>: Add more practical tools and features</p></li>
+<li><p><strong>Expand Community Impact</strong>: Attract more researchers and developers to participate</p></li>
+</ol>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading"></a></h2>
+<p>The Open FinLLM Leaderboard provides important infrastructure for the financial AI field. By establishing an open, transparent, and standardized evaluation platform, we have made important contributions to the healthy development of financial AI technology. This platform not only promotes academic research but also provides reliable guidance for industrial applications, ultimately advancing the entire financial AI ecosystem.</p>
+</section>
+<section id="related-links">
+<h2>Related Links<a class="headerlink" href="#related-links" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Paper PDF</strong>: <cite>https://arxiv.org/pdf/2501.10963.pdf</cite></p></li>
+<li><p><strong>Project Homepage</strong>: TBD</p></li>
+<li><p><strong>Code Repository</strong>: TBD</p></li>
+<li><p><strong>Online Demo</strong>: TBD</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2025, Shengyuan Lin。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

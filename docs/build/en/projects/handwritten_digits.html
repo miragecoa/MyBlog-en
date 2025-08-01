@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handwritten Digits Recognition Project &mdash; Shengyuan Lin - Personal Blog 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=bac277d5" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=f115507d"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=beaddf03"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="../../_static/js/language-switcher.js?v=2b9764c2"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Shengyuan Lin - Personal Blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">个人介绍</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">个人介绍概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/introduction.html">个人介绍</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">项目展示</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/overview.html">项目展示概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/open_finllm_leaderboard.html">Open FinLLM Leaderboard 项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/gme_event_analysis.html">基于大语言模型的GME连锁事件分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/handwritten_digits.html">手写数字识别项目</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">工作经验</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../experience/overview.html">工作经验概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../experience/china_telecom.html">中国电信公司 - 数据分析师</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../experience/fuzhou_digital.html">福州数字产业互联网技术 - 软件工程师</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">发表论文</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/overview.html">发表论文概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/open_finllm_leaderboard.html">Open FinLLM Leaderboard: Towards Financial AI Readiness</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/multifinben.html">MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../papers/gamestop_analysis.html">ACM Conference Paper</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">实用资源与教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/overview.html">实用资源与教程</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Shengyuan Lin - Personal Blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Handwritten Digits Recognition Project</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/leyradc/MyBlog/blob/main/docs/source/en/projects/handwritten_digits.rst" class="fa fa-github"> 在 GitHub 上编辑</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="handwritten-digits-recognition-project">
+<h1>Handwritten Digits Recognition Project<a class="headerlink" href="#handwritten-digits-recognition-project" title="Link to this heading"></a></h1>
+<p>## Project Overview</p>
+<p>This is a machine learning-based 16x16 pixel handwritten digit recognition project, implemented as a practical project for the machine learning course. The project implements various classic machine learning algorithms, laying the foundation for learning more complex algorithms.</p>
+<p>## Project Background</p>
+<p>Handwritten digit recognition is a classic problem in machine learning and an important milestone in the development of deep learning. Through this project, I gained a deep understanding of basic machine learning concepts and algorithm implementation.</p>
+<p>## Technical Implementation</p>
+<p>### 1. Data Preprocessing
+- <strong>Dataset</strong>: 16x16 pixel handwritten digit images
+- <strong>Feature Extraction</strong>: Convert images to 256-dimensional feature vectors
+- <strong>Data Standardization</strong>: Normalize features
+- <strong>Train-Test Split</strong>: Split dataset in 7:3 ratio</p>
+<p>### 2. Algorithm Implementation</p>
+<p>#### Linear Regression
+- Implement basic linear regression algorithm
+- Use gradient descent to optimize parameters
+- Evaluate model performance</p>
+<p>#### Logistic Regression
+- Implement binary classification logistic regression
+- Use sigmoid activation function
+- Handle multi-classification problems</p>
+<p>#### Other Algorithm Preparation
+- <strong>k-NN Algorithm</strong>: Distance-based classification method
+- <strong>Neural Networks</strong>: Multi-layer perceptron implementation
+- <strong>SVM Algorithm</strong>: Support Vector Machine classification</p>
+<p>### 3. Model Evaluation
+- <strong>Accuracy</strong>: Evaluate classification correctness
+- <strong>Confusion Matrix</strong>: Analyze classification results
+- <strong>Cross-Validation</strong>: Validate model stability</p>
+<p>## Project Achievements</p>
+<p>### Performance Results
+- Linear regression performed well on regression tasks
+- Logistic regression achieved high accuracy on classification tasks
+- Laid solid foundation for subsequent algorithm learning</p>
+<p>### Technical Gains
+- Deep understanding of basic machine learning principles
+- Mastered data preprocessing and feature engineering
+- Learned model evaluation and tuning methods
+- Enhanced programming and algorithm implementation skills</p>
+<p>## Technology Stack</p>
+<p>### Programming Language
+- <strong>Python</strong>: Primary development language
+- <strong>NumPy</strong>: Numerical computing library
+- <strong>Matplotlib</strong>: Data visualization</p>
+<p>### Machine Learning
+- <strong>Linear Regression</strong>: Basic regression algorithm
+- <strong>Logistic Regression</strong>: Classification algorithm
+- <strong>Data Preprocessing</strong>: Feature engineering</p>
+<p>### Development Tools
+- <strong>Jupyter Notebook</strong>: Interactive development environment
+- <strong>Git</strong>: Version control
+- <strong>LaTeX</strong>: Report writing</p>
+<p>## Project Highlights</p>
+<p>### 1. Algorithm Understanding
+- Complete understanding from mathematical principles to code implementation
+- Mastered optimization methods like gradient descent
+- Understood overfitting and underfitting problems</p>
+<p>### 2. Practical Skills
+- Independently completed full process from data processing to model deployment
+- Learned how to tune parameters and optimize models
+- Developed problem-solving capabilities</p>
+<p>### 3. Learning Foundation
+- Laid foundation for subsequent deep learning studies
+- Established basic machine learning thinking patterns
+- Enhanced mathematical and programming abilities</p>
+<p>## Future Extensions</p>
+<p>### Algorithm Improvements
+- Implement more machine learning algorithms
+- Try deep learning models
+- Explore feature selection methods</p>
+<p>### Application Extensions
+- Extend to other image recognition tasks
+- Try real-time recognition systems
+- Explore mobile deployment</p>
+<p>## Related Links</p>
+<ul class="simple">
+<li><p><strong>Project Code</strong>: TBD</p></li>
+<li><p><strong>Dataset</strong>: TBD</p></li>
+<li><p><strong>Technical Report</strong>: TBD</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2025, Shengyuan Lin。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
