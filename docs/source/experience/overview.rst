@@ -5,11 +5,26 @@ Welcome to my work experience page! Here I document my work experience at differ
 
 ## Work Experience
 
+### 🔬 SecureFinAI Lab, Columbia University
+**Position**: Summer Intern
+**Duration**: Summer 2025
+**Location**: New York, USA
+
+**Key Responsibilities**:
+- Leader of the `Open FinLLM Leaderboard <https://www.finos.org/hosted-events/2025-09-19-ai-evaluation-benchmarking-workshop>`__.
+- Collaborate with the Linux Foundation, FinOS, and Red Hat.
+- This project is part of a larger evaluating benchmarking suite.
+- Responsible for organizing the `AI Evaluation Benchmarking Workshop <https://www.finos.org/hosted-events/2025-09-19-ai-evaluation-benchmarking-workshop>`__.
+
+**Partner Lead**:
+- `Vincent Caldeira <https://www.linkedin.com/in/caldeirav/?originalSubdomain=sg>`__ (Chief Technology Officer, APAC at Red Hat)
+
+
 ### 📞 China Telecom Company
-**Position**: Data Analyst  
-**Department**: Data Center  
-**Duration**: TBD  
-**Location**: TBD  
+**Position**: Data Analyst
+**Department**: Data Center
+**Duration**: TBD
+**Location**: TBD
 
 **Key Responsibilities**:
 - Deploying WeChat chatbot
@@ -24,10 +39,10 @@ Welcome to my work experience page! Here I document my work experience at differ
 - Permission Management: Custom permission system
 
 ### 💻 Fuzhou Digital Industry Internet Technology
-**Position**: Software Engineer  
-**Department**: Technology R&D Department  
-**Duration**: TBD  
-**Location**: Fuzhou  
+**Position**: Software Engineer
+**Department**: Technology R&D Department
+**Duration**: TBD
+**Location**: Fuzhou
 
 **Key Responsibilities**:
 - Developing server APIs based on Mybatis framework
@@ -82,4 +97,4 @@ From data analyst to software engineer, I have accumulated rich experience in di
 
 ---
 
-*Click the links below to view detailed work experience information.* 
+*Click the links below to view detailed work experience information.*

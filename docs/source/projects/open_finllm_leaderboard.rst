@@ -128,4 +128,6 @@ As the Project Leader, I am committed to:
 **🏢 Collaborating Institutions**
 - **FINOS Foundation**: https://www.finos.org/
   - Financial Open Source Foundation, main project partner
-  - Provides industry support and standardization guidance 
+  - Provides industry support and standardization guidance
+- **Linux Foundation**: Provides project infrastructure and community support.
+- **Red Hat**: Offers support in project evaluation and technical architecture.
