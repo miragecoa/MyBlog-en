@@ -9,7 +9,7 @@ Introduction
 ============
 Welcome to my personal blog!
 
-I am Shengyuan Lin, a Computer Science student currently studying at Rensselaer Polytechnic Institute (RPI).
+I am Shengyuan Lin, a computer scientist passionate about applying cutting-edge AI to the financial sector. Currently pursuing a Master's degree in Electrical and Computer Engineering at Carnegie Mellon University, I lead the Open FinLLM Leaderboard, an open-source initiative dedicated to building the next generation of AI evaluation standards for the financial industry.
 
 Contact Information
 ======================
@@ -33,63 +33,84 @@ Education Background
 
 Research & Project Experience
 =============================
-**Open FinLLM Leaderboard** - Collaboration with FINOS Foundation
-- **Position**: Project Leader
+:doc:`**Open FinLLM Leaderboard** <../projects/open_finllm_leaderboard>` - Collaboration with FINOS Foundation
+  - **Position**: Project Leader
 - **Duration**: 2024 - Present
 - **Project Description**: A large-scale financial language model evaluation and benchmarking project in collaboration with FINOS Foundation, aimed at evaluating LLMs' multimodal capabilities in financial tasks and exploring FinAgents use cases.
 - **Project Vision**:
-  - Provide specialized evaluation framework for financial language models
-  - Conduct comprehensive benchmarking of 30 LLMs across about 50 financial tasks
-  - Help researchers and practitioners identify the right model for financial applications
+
+    - Provide specialized evaluation framework for financial language models
+    - Conduct comprehensive benchmarking of 30 LLMs across about 50 financial tasks
+    - Help researchers and practitioners identify the right model for financial applications
 - **Core Features**:
-  - **Comprehensive Evaluation**: Detailed assessment across seven key financial categories
-  - **Real-World Relevance**: Benchmarks based on actual financial industry challenges
-  - **Zero-Shot Testing**: Evaluation of models' ability to generalize to unseen financial tasks
-  - **Transparent Metrics**: Clear performance metrics for informed model selection
+
+    - **Comprehensive Evaluation**: Detailed assessment across seven key financial categories
+    - **Real-World Relevance**: Benchmarks based on actual financial industry challenges
+    - **Zero-Shot Testing**: Evaluation of models' ability to generalize to unseen financial tasks
+    - **Transparent Metrics**: Clear performance metrics for informed model selection
 - **Technical Highlights**:
-  - Financial Question Tree Structure: Hierarchical organization of 100,000 financial questions
-  - Zero-Knowledge Proof (ZKP): Protect dataset privacy and prevent leaderboard manipulation
-  - FinAgents Demos: Showcase applications of financial LLMs in real-world scenarios
+
+    - Financial Question Tree Structure: Hierarchical organization of 100,000 financial questions
+    - Zero-Knowledge Proof (ZKP): Protect dataset privacy and prevent leaderboard manipulation
+    - FinAgents Demos: Showcase applications of financial LLMs in real-world scenarios
 - **Project Impact**: This project will evolve into a larger Evaluation and Benchmarking Suite
 
-**Analyzing Cascading GME Event Using LLM** - Troy, NY
-- **Position**: Research Assistant
+:doc:`**Analyzing Cascading GME Event Using LLM** <../projects/gme_event_analysis>` - Troy, NY
+  - **Position**: Research Assistant
 - **Supervisor**: Professor Xiaoyang Liu, RPI
 - **Duration**: Oct 2023 - Aug 2024
 - **Project Description**: This project uses Large Language Models to analyze the cascading GME (GameStop) event, predicting and understanding social media-driven financial market volatility by analyzing WallStreetBets user behavior patterns.
 - **Key Responsibilities**:
-  - Deployed Scrapy to collect GME-related user posts and discussions from WallStreetBets
-  - Used OpenAI API and locally deployed llama2 for text sentiment analysis
-  - Established correlation models between social media sentiment and financial market volatility
-  - Analyzed sentiment tendencies and investment intentions in user posts
-  - Applied MySQL for storing user posts and analysis results
 
-**Handwritten Digits Data** - Fall 2023
-- **Course Project**: Ongoing course project of "Machine Learning from Data"
+    - Deployed Scrapy to collect GME-related user posts and discussions from WallStreetBets
+    - Used OpenAI API and locally deployed llama2 for text sentiment analysis
+    - Established correlation models between social media sentiment and financial market volatility
+    - Analyzed sentiment tendencies and investment intentions in user posts
+    - Applied MySQL for storing user posts and analysis results
+
+:doc:`**Handwritten Digits Data** <../projects/handwritten_digits>` - Fall 2023
+  - **Course Project**: Ongoing course project of "Machine Learning from Data"
 - **Key Responsibilities**:
-  - Developed features that could be used by learning algorithms to identify handwritten digit numbers in a 16x16 pixel image size
-  - Implemented linear regression with the pocket algorithm and logistic regression with stochastic gradient descent
-  - Will continue implementing k-NN, Neural Networks, and SVM algorithms
+
+    - Developed features that could be used by learning algorithms to identify handwritten digit numbers in a 16x16 pixel image size
+    - Implemented linear regression with the pocket algorithm and logistic regression with stochastic gradient descent
+    - Will continue implementing k-NN, Neural Networks, and SVM algorithms
 
 
 
 Internship Experience
 =====================
-**China Telecom Company** - Fuzhou, China
-- **Position**: Data Analyst, Data Center
-- **Duration**: Spring 2022
+
+**SecureFinAI Lab, Columbia University** - New York, USA
+  - **Position**: Summer Intern
+- **Duration**: Jun 2025 - Aug 2025 (Planned)
 - **Key Responsibilities**:
-  - Deployed a WeChat chatbot for user interaction
-  - Implemented server API for user login and ensured users with different permission levels have access to different API
-  - Implemented server API for contact search service (chatbot database support)
-  - Employed Eggjs (Nodejs) and MySQL for server interaction
+
+    - Leader of the `Open FinLLM Leaderboard <https://www.finos.org/hosted-events/2025-09-19-ai-evaluation-benchmarking-workshop>`__.
+    - Collaborate with the Linux Foundation, FinOS, and Red Hat.
+    - This project is part of a larger evaluating benchmarking suite.
+    - Responsible for organizing the `AI Evaluation Benchmarking Workshop <https://www.finos.org/hosted-events/2025-09-19-ai-evaluation-benchmarking-workshop>`__.
+
+
+
+**China Telecom Company** - Fuzhou, China
+  - **Position**: Data Analyst, Data Center
+- **Duration**: Jan 2022 - May 2022
+- **Key Responsibilities**:
+
+    - Deployed a WeChat chatbot for user interaction
+    - Implemented server API for user login and ensured users with different permission levels have access to different API
+    - Implemented server API for contact search service (chatbot database support)
+    - Employed Eggjs (Nodejs) and MySQL for server interaction
+
 
 **Fuzhou Digital Industry Internet Technology Co., LTD** - Fuzhou, China
-- **Position**: Software Engineer, Technology R & D Department
-- **Duration**: Fall 2021
+  - **Position**: Software Engineer, Technology R & D Department
+- **Duration**: Sep 2021 - Dec 2021
 - **Key Responsibilities**:
-  - Wrote functions that met the specification document to support server API on the Mybatis framework
-  - Wrote functions associated with SQL database operation, e.g. create, delete, edit, select to MySQL database
+
+    - Wrote functions that met the specification document to support server API on the Mybatis framework
+    - Wrote functions associated with SQL database operation, e.g. create, delete, edit, select to MySQL database
 
 Skills
 ============
@@ -117,4 +138,4 @@ I am particularly interested in the following areas:
 
 Future Plans
 ============
-As a CMU ECE student and Project Leader of the Open FinLLM Leaderboard, I am committed to making significant contributions in the financial technology and artificial intelligence domains. Through this collaboration with FINOS Foundation, I aim to establish standardized AI evaluation frameworks for the financial industry and promote practical applications of financial AI technology. I plan to continue deep research in AI applications for finance, particularly in model evaluation, benchmarking, and FinAgents development, contributing more to the open-source community and the advancement of the financial industry. 
+As a CMU ECE student and Project Leader of the Open FinLLM Leaderboard, I am committed to making significant contributions in the financial technology and artificial intelligence domains. Through this collaboration with FINOS Foundation, I aim to establish standardized AI evaluation frameworks for the financial industry and promote practical applications of financial AI technology. I plan to continue deep research in AI applications for finance, particularly in model evaluation, benchmarking, and FinAgents development, contributing more to the open-source community and the advancement of the financial industry.

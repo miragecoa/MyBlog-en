@@ -1,4 +1,4 @@
-ACM Conference Paper
+Analyzing the GameStop Event
 ====================
 
 Paper Information
