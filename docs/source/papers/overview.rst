@@ -14,14 +14,6 @@ Paper List
 
 **Abstract**: This paper introduces the Open FinLLM Leaderboard, an open platform for evaluating financial large language models. In collaboration with Linux Foundation and Hugging Face, we created an open platform for assessing and comparing AI models' performance on a wide spectrum of financial tasks.
 
-### 🌍 MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation
-**Publication Date**: June 2025  
-**Journal/Conference**: arXiv  
-**DOI**: `10.48550/arXiv.2506.14028`  
-**Link**: `https://arxiv.org/abs/2506.14028`  
-
-**Abstract**: We propose MultiFinBen, the first multilingual and multimodal benchmark tailored to the global financial domain. This benchmark evaluates LLMs across modalities (text, vision, audio) and linguistic settings (monolingual, bilingual, multilingual) on domain-specific tasks.
-
 ### 🔬 Analyzing Cascading Outbreak of GameStop Event: A Practical Approach Using Network Analysis and Large Language Models
 **Publication Date**: TBD  
 **Journal/Conference**: ACM  
@@ -29,6 +21,14 @@ Paper List
 **Link**: `https://dl.acm.org/doi/10.1145/3677052.3698636`  
 
 **Abstract**: This paper proposes a practical approach using network analysis and large language models to analyze the cascading outbreak of the GameStop event, combining network science and natural language processing techniques to deeply analyze how social media user behavior affects financial markets.
+
+### 🌍 MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark for Financial LLM Evaluation
+**Publication Date**: June 2025  
+**Journal/Conference**: arXiv  
+**DOI**: `10.48550/arXiv.2506.14028`  
+**Link**: `https://arxiv.org/abs/2506.14028`  
+
+**Abstract**: We propose MultiFinBen, the first multilingual and multimodal benchmark tailored to the global financial domain. This benchmark evaluates LLMs across modalities (text, vision, audio) and linguistic settings (monolingual, bilingual, multilingual) on domain-specific tasks.
 
 Research Areas
 --------------

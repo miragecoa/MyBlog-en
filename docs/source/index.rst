@@ -10,7 +10,7 @@ Shengyuan Lin - Personal Blog
    `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
    documentation for details.
 
-Welcome to my personal blog! I am a Computer Science student at Rensselaer Polytechnic Institute with a passion for machine learning, artificial intelligence, and software development.
+Welcome to my personal blog! I am a Computer Science student at Carnegie Mellon University with a passion for machine learning, artificial intelligence, and software development.
 
 .. toctree::
    :maxdepth: 2
@@ -34,7 +34,8 @@ Welcome to my personal blog! I am a Computer Science student at Rensselaer Polyt
 
    experience/overview
    experience/china_telecom
-   experience/fuzhou_digital
+   experience/fuzhou_digital_backend
+   experience/fuzhou_digital_ai
 
 
 
@@ -44,8 +45,8 @@ Welcome to my personal blog! I am a Computer Science student at Rensselaer Polyt
 
    papers/overview
    papers/open_finllm_leaderboard
-   papers/multifinben
    papers/gamestop_analysis
+   papers/multifinben
 
 .. toctree::
    :maxdepth: 2

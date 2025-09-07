@@ -16,12 +16,21 @@ Abstract
 
 Financial large language models (FinLLMs) with multimodal capabilities are envisioned to revolutionize applications across business, finance, accounting, and auditing. However, real-world adoption requires robust benchmarks of FinLLMs' and FinAgents' performance. Maintaining an open leaderboard is crucial for encouraging innovative adoption and improving model effectiveness.
 
-In collaboration with Linux Foundation and Hugging Face, we create an open FinLLM leaderboard, which serves as an open platform for assessing and comparing AI models' performance on a wide spectrum of financial tasks. By democratizing access to advances of financial knowledge and intelligence, a chatbot or agent may enhance the analytical capabilities of the general public to a professional level within a few months of usage.
+**Project Collaboration Background**:
+This project is a significant collaboration with FINOS Foundation, supported by multiple leading institutions:
+- **Red Hat CTO**: Serves as project manager, providing strategic guidance
+- **SecureFinAI Lab, Columbia University**: Core academic partner
+- **FinAI Academic Alliance**: Yale University, Harvard University, Manchester University, Montreal University
+- **Linux Foundation and Hugging Face**: Technical platform support
+
+Under this robust collaboration framework, we create an open FinLLM leaderboard, which serves as an open platform for assessing and comparing AI models' performance on a wide spectrum of financial tasks. By democratizing access to advances of financial knowledge and intelligence, a chatbot or agent may enhance the analytical capabilities of the general public to a professional level within a few months of usage.
+
+As a Research Assistant at SecureFinAI Lab during Summer 2025, I managed the project operations and successfully organized the SecureFinAI Contest 2025, further advancing the field of financial AI.
 
 This open leaderboard welcomes contributions from academia, open-source community, industry, and stakeholders. In particular, we encourage contributions of new datasets, tasks, and models for continual update. Through fostering a collaborative and open ecosystem, we seek to promote financial AI readiness.
 
-Research Background
--------------------
+Research Background and Motivation
+----------------------------------
 
 With the rapid development of large language model technology, the financial AI field faces the following challenges:
 
@@ -30,7 +39,14 @@ With the rapid development of large language model technology, the financial AI 
 3. **Closed Nature**: Many evaluation platforms lack openness and transparency
 4. **Insufficient Practicality**: Evaluation results have gaps with actual application scenarios
 
-To address these issues, we proposed the Open FinLLM Leaderboard project.
+**Project Framework Background**:
+This research is a key component of the FINOS Applied GenAI initiative. Applied GenAI is a large project framework focused on "Evaluation and benchmarking suite for Generative AI (GenAI) applications in financial services."
+
+**Research Motivation**:
+- **Explore Financial Use Cases**: Systematically explore and evaluate diverse application scenarios of generative AI in the financial domain, covering everything from traditional financial analysis to emerging fintech applications
+- **Promote a de facto standard in financial area**: Through establishing open, transparent, and reproducible evaluation frameworks, drive the establishment and adoption of financial AI evaluation standards, providing unified reference benchmarks for industry development
+
+To address these challenges and achieve our research objectives, we proposed the Open FinLLM Leaderboard project.
 
 Technical Contributions
 ------------------------

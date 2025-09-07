@@ -6,8 +6,6 @@ China Telecom Company - Data Analyst
 **Company Name**: China Telecom Company  
 **Position**: Data Analyst  
 **Department**: Data Center  
-**Duration**: TBD  
-**Location**: TBD  
 
 ## Work Overview
 
@@ -101,17 +99,11 @@ During my time as a Data Analyst at China Telecom Company's Data Center, I was p
 
 ## Work Achievements
 
-### Quantitative Results
-- Chatbot handled over 100,000 customer inquiries
-- Permission management system supported 1000+ users and 50+ roles
-- Backend service API response time optimized to within 200ms
-- System availability reached 99.9%
-
-### Quality Improvements
-- Customer service response time reduced by 60%
-- System security significantly improved
-- Development efficiency increased by 40%
-- Code quality met team standards
+### Key Contributions
+- Successfully deployed and maintained WeChat chatbot system, improving customer service efficiency
+- Established comprehensive user permission management system, significantly enhancing system security
+- Built stable and reliable backend API services supporting multiple business applications
+- Optimized database performance and system response speed
 
 ## Skill Development
 
@@ -131,10 +123,4 @@ During my time as a Data Analyst at China Telecom Company's Data Center, I was p
 
 My work experience at China Telecom Company gave me a deep understanding of large enterprise technology architecture and business processes. Through participation in multiple important projects, I not only improved my technical capabilities but also learned how to work efficiently in an enterprise environment.
 
-This experience laid a solid foundation for my subsequent career development, especially accumulating valuable experience in enterprise application development, system integration, and project management.
-
-## Related Links
-
-- **Company Website**: TBD
-- **Project Code**: TBD
-- **Technical Documentation**: TBD 
+This experience laid a solid foundation for my subsequent career development, especially accumulating valuable experience in enterprise application development, system integration, and project management. 
