@@ -25,6 +25,8 @@ Welcome to my personal blog! I am a Computer Science student at Carnegie Mellon 
 
    projects/overview
    projects/open_finllm_leaderboard
+   projects/ai_wenshu
+   projects/miracle_games_portal
    projects/gme_event_analysis
    projects/handwritten_digits
 
